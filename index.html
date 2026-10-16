@@ -1,70 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Aerojohn Joshua G. Pancho — technical-vocational educator, digital creator, e-commerce and virtual assistance support, and ICT/CSS practitioner." />
+  <meta name="description" content="Portfolio of Aerojohn Joshua G. Pancho — virtual assistance, digital content, e-commerce, ICT/CSS teaching, AI-assisted workflows, research, and computer hardware servicing." />
   <meta name="theme-color" content="#f5f0e8" />
-  <title>Aerojohn Joshua G. Pancho | Portfolio</title>
+  <meta property="og:title" content="Aerojohn Joshua G. Pancho — Portfolio" />
+  <meta property="og:description" content="Technical, creative, and digital work across VA support, e-commerce, ICT/CSS, AI workflows, and research." />
+  <title>Aerojohn Joshua G. Pancho — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
   <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Back to top"><span class="brand-mark">AJ</span><span class="brand-name">Aerojohn Pancho</span></a>
-    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="site-nav" aria-label="Main navigation"><a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact" class="nav-cta">Contact</a></nav>
+    <a class="brand" href="#top" aria-label="Aerojohn Pancho home">
+      <span class="brand-mark">AJ</span>
+      <span class="brand-copy"><strong>Aerojohn Pancho</strong><small>Technical × Digital</small></span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle theme">
+        <span class="theme-icon theme-sun" aria-hidden="true">☀</span>
+        <span class="theme-icon theme-moon" aria-hidden="true">☾</span>
+      </button>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
   </header>
 
   <main>
     <section class="hero section-shell">
       <div class="hero-copy reveal">
-        <p class="eyebrow">Technical • Creative • Digital</p>
-        <h1>I build useful things, solve practical problems, and keep learning fast.</h1>
-        <p class="hero-lead">I'm <strong>Aerojohn Joshua G. Pancho</strong>, a BTVTE student specializing in Computer Hardware Servicing with hands-on experience in ICT/CSS teaching, e-commerce operations, digital content, AI-assisted workflows, research, and administrative support.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#work">View selected work</a><a class="button button-secondary" href="resume.html" target="_blank" rel="noopener">View résumé</a></div>
-        <div class="availability-row" aria-label="Areas of work"><span>Virtual Assistance</span><span>E-commerce</span><span>Digital Content</span><span>ICT / CSS</span></div>
+        <div class="availability-pill"><span class="status-dot"></span> Open to remote opportunities</div>
+        <p class="eyebrow">Virtual Assistance • Digital Content • ICT / CSS</p>
+        <h1>I turn messy tasks into <em>useful, finished work.</em></h1>
+        <p class="hero-lead">I’m <strong>Aerojohn Joshua G. Pancho</strong> — a technical-vocational educator in training and a hands-on digital generalist. I work across admin support, e-commerce, content creation, AI-assisted workflows, research, and computer troubleshooting.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="button button-secondary" href="resume.html" target="_blank" rel="noopener">Résumé PDF <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-proof" aria-label="Professional highlights">
+          <div><strong>33</strong><span>OJT days</span></div>
+          <div><strong>7</strong><span>AI literacy domains</span></div>
+          <div><strong>40+</strong><span>WPM data entry</span></div>
+          <div><strong>2×</strong><span>OJT recognition</span></div>
+        </div>
       </div>
+
       <div class="hero-visual reveal delay-1">
-        <div class="portrait-card"><div class="portrait-halo"></div><img src="https://avatars.githubusercontent.com/u/335560335?v=4" alt="Portrait of Aerojohn Joshua G. Pancho" /><div class="floating-chip chip-one">AI + Productivity</div><div class="floating-chip chip-two">Computer Servicing</div><div class="floating-chip chip-three">Content + Design</div></div>
-        <div class="hero-stat-grid"><div class="stat-card"><strong>33</strong><span>OJT days completed</span></div><div class="stat-card"><strong>7</strong><span>AI literacy domains</span></div><div class="stat-card"><strong>40+</strong><span>WPM data entry</span></div></div>
+        <div class="portrait-stage">
+          <div class="portrait-frame">
+            <img src="https://avatars.githubusercontent.com/u/335560335?v=4" alt="Aerojohn Joshua G. Pancho" />
+          </div>
+          <div class="floating-note note-a"><span>Current focus</span><strong>Remote + Digital Support</strong></div>
+          <div class="floating-note note-b"><span>Based in</span><strong>Laoag City, PH</strong></div>
+          <div class="floating-note note-c"><span>Stack</span><strong>Canva · AI · Web · CSS</strong></div>
+          <svg class="hero-scribble" viewBox="0 0 300 140" aria-hidden="true"><path d="M20 105C70 15 160 15 210 74c25 31 45 39 72 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M267 68l15 12-17 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
       </div>
     </section>
 
-    <section class="marquee-wrap" aria-label="Tools and competencies"><div class="marquee-track"><span>Canva</span><span>ChatGPT</span><span>Gemini</span><span>Google Workspace</span><span>WordPress</span><span>Elementor</span><span>Photoshop</span><span>CapCut</span><span>DaVinci Resolve</span><span>NotebookLM</span><span>Google AI Studio</span><span>VS Code</span><span>GitHub</span><span>Computer Hardware Servicing</span><span>Canva</span><span>ChatGPT</span><span>Gemini</span><span>Google Workspace</span><span>WordPress</span><span>Elementor</span><span>Photoshop</span><span>CapCut</span><span>DaVinci Resolve</span><span>NotebookLM</span><span>Google AI Studio</span><span>VS Code</span><span>GitHub</span><span>Computer Hardware Servicing</span></div></section>
-
-    <section class="section-shell section" id="about">
-      <div class="section-heading reveal"><p class="eyebrow">About me</p><h2>A flexible generalist with a strong technical base.</h2></div>
-      <div class="about-grid"><div class="about-copy reveal"><p>My background combines technical-vocational education with real workplace experience. I’m comfortable moving between computer troubleshooting, classroom and training support, document organization, digital marketing tasks, e-commerce operations, and creative production.</p><p>I enjoy work that needs attention to detail, quick learning, clear communication, and a practical approach. I use AI tools to speed up research, planning, content production, and repetitive workflows—but I still review, refine, and contextualize outputs before using them.</p></div><div class="about-cards reveal delay-1"><article class="mini-card"><span class="mini-number">01</span><h3>Technical</h3><p>Computer hardware servicing, diagnostics, Windows setup, software installation, networking, and troubleshooting.</p></article><article class="mini-card"><span class="mini-number">02</span><h3>Digital</h3><p>Content creation, Canva, Photoshop, UGC workflows, video editing, AI tools, WordPress, and basic web work.</p></article><article class="mini-card"><span class="mini-number">03</span><h3>Operations</h3><p>Data entry, inventory support, file organization, checklists, documentation, product preparation, and admin support.</p></article></div></div>
+    <section class="trust-strip" aria-label="Tools and work areas">
+      <div class="trust-track">
+        <span>Canva</span><span>ChatGPT</span><span>Gemini</span><span>Google Workspace</span><span>WordPress</span><span>Elementor</span><span>Photoshop</span><span>CapCut</span><span>DaVinci Resolve</span><span>NotebookLM</span><span>Google AI Studio</span><span>GitHub</span><span>Computer Hardware Servicing</span>
+        <span>Canva</span><span>ChatGPT</span><span>Gemini</span><span>Google Workspace</span><span>WordPress</span><span>Elementor</span><span>Photoshop</span><span>CapCut</span><span>DaVinci Resolve</span><span>NotebookLM</span><span>Google AI Studio</span><span>GitHub</span><span>Computer Hardware Servicing</span>
+      </div>
     </section>
 
-    <section class="section section-dark" id="work"><div class="section-shell"><div class="section-heading section-heading-light reveal"><p class="eyebrow">Selected work</p><h2>Projects backed by real outputs and hands-on experience.</h2></div><div class="projects-grid">
-      <article class="project-card project-card-large reveal"><div class="project-media image-cover"><img src="https://placehold.co/1200x700/e8e3d9/2a2a28?text=GC+%26+Co.+OJT+Work" alt="OJT portfolio sample" loading="lazy" /></div><div class="project-content"><div class="project-meta"><span>GC & Co. Online Shop</span><span>2026</span></div><h3>E-commerce, AI & Digital Content Internship</h3><p>Worked across packaging, fulfillment, inventory support, digital marketing, UGC, AI-generated promotional materials, multimedia, and workplace communication.</p><ul class="tag-list"><li>E-commerce</li><li>UGC</li><li>AI workflows</li><li>Inventory</li><li>Canva</li></ul></div></article>
-      <article class="project-card reveal delay-1"><div class="project-media"><img src="https://placehold.co/1200x700/e8e3d9/2a2a28?text=ICT+%2F+CSS+Lesson+Design" alt="Computer Systems Servicing lesson plan sample" loading="lazy" /></div><div class="project-content"><div class="project-meta"><span>ICT / CSS</span><span>2026</span></div><h3>Teaching & Instructional Design</h3><p>Prepared lesson plans, quizzes, rubrics, performance tasks, instructional materials, and classroom activities for Grade 9 and Grade 10 CSS/ICT learners.</p><ul class="tag-list"><li>Lesson planning</li><li>Assessment</li><li>CSS</li></ul></div></article>
-      <article class="project-card reveal delay-2"><div class="project-media"><img src="https://placehold.co/1200x700/dde5dc/2a2a28?text=AI+Literacy+Research" alt="AI literacy research sample" loading="lazy" /></div><div class="project-content"><div class="project-meta"><span>Research & Web Toolkit</span><span>2026</span></div><h3>Needs-Based AI Literacy Toolkit</h3><p>Led the development workflow for a senior-high-school AI literacy toolkit covering seven domains, with research instruments, validation materials, forms, web content, and data organization.</p><ul class="tag-list"><li>Research</li><li>Google Forms</li><li>Web content</li><li>AI literacy</li></ul></div></article>
-    </div></div></section>
+    <section class="section section-work" id="work">
+      <div class="section-shell">
+        <div class="section-intro reveal">
+          <div><p class="eyebrow">Selected work</p><h2>Not just skills. <em>Proof of work.</em></h2></div>
+          <p>Three projects that show how I work across research, operations, creative production, and technical education.</p>
+        </div>
 
-    <section class="section-shell section" id="experience"><div class="section-heading reveal"><p class="eyebrow">Experience</p><h2>A mix of customer service, technical work, education, and operations.</h2></div><div class="timeline">
-      <article class="timeline-item reveal"><div class="timeline-year">2026</div><div class="timeline-body"><h3>GC & Co. Online Shop</h3><p class="role">On-the-Job Training / E-commerce & Digital Content Intern</p><p>Supported production, fulfillment, inventory, marketing content, AI-assisted creative workflows, multimedia, and internal workplace activities.</p></div></article>
-      <article class="timeline-item reveal"><div class="timeline-year">2026</div><div class="timeline-body"><h3>MMSU Laboratory Schools — ICT / CSS</h3><p class="role">Field Study / Student Teacher</p><p>Assisted classroom instruction, assessments, laboratory activities, learner support, instructional materials, and classroom management.</p></div></article>
-      <article class="timeline-item reveal"><div class="timeline-year">2024–2025</div><div class="timeline-body"><h3>Trattoria Altrove Cuisine Inc.</h3><p class="role">Customer Service / Food & Beverage Operations</p><p>Handled guest service, beverage preparation, stock and inventory, kitchen support, sales documentation, and operational organization.</p></div></article>
-      <article class="timeline-item reveal"><div class="timeline-year">2023–2024</div><div class="timeline-body"><h3>7-Eleven</h3><p class="role">Retail Operations</p><p>Managed POS transactions, cash reconciliation, receipts, sales reports, inventory, product displays, and customer service.</p></div></article>
-      <article class="timeline-item reveal"><div class="timeline-year">2019–2022</div><div class="timeline-body"><h3>Jollibee</h3><p class="role">Customer Service & Operations</p><p>Worked across cashiering, drive-thru, food preparation, cleanliness standards, team training, and high-volume customer service.</p></div></article>
-    </div></section>
+        <div class="case-grid">
+          <article class="case-card case-featured reveal" data-case="research">
+            <div class="case-media case-media-browser">
+              <div class="browser-chrome"><i></i><i></i><i></i><span>AI Literacy Toolkit</span></div>
+              <div class="browser-body research-ui">
+                <div class="research-sidebar"><span class="active">Overview</span><span>7 Domains</span><span>Activities</span><span>Resources</span></div>
+                <div class="research-main"><p>AI LITERACY FOR SHS</p><h3>Learn AI. Question it. Use it responsibly.</h3><div class="domain-pills"><span>Basic AI</span><span>Evaluation</span><span>Verification</span><span>Integrity</span><span>Privacy</span><span>Ethics</span><span>Responsible Use</span></div><div class="research-progress"><span></span></div></div>
+              </div>
+            </div>
+            <div class="case-content">
+              <div class="case-index">01</div>
+              <p class="case-kicker">Research · Web Toolkit · 2026</p>
+              <h3>Needs-Based AI Literacy Toolkit for Senior High School Students</h3>
+              <p>Led the workflow from needs assessment and research documentation to a seven-domain web learning toolkit, validation materials, Google Forms, ethics paperwork, and data organization.</p>
+              <div class="case-metrics"><span><strong>7</strong> learning domains</span><span><strong>35</strong> needs-assessment items</span><span><strong>Web</strong> learning toolkit</span></div>
+              <div class="case-actions"><button class="text-link case-open" type="button">View case study <span>↗</span></button><a class="text-link muted" href="https://github.com/Kittieee0929/ai-literacy-toolkit-shs" target="_blank" rel="noopener">GitHub <span>↗</span></a></div>
+            </div>
+          </article>
 
-    <section class="section section-soft" id="skills"><div class="section-shell"><div class="section-heading reveal"><p class="eyebrow">Skills & tools</p><h2>What I can bring into a remote, digital, technical, or education-focused role.</h2></div><div class="skills-grid">
-      <article class="skill-panel reveal"><h3>Admin & Virtual Assistance</h3><ul><li>Data entry (40 WPM+)</li><li>Google Workspace</li><li>Microsoft Office</li><li>File & document organization</li><li>SOP / checklist preparation</li><li>Administrative support</li><li>Client communication</li></ul></article>
-      <article class="skill-panel reveal delay-1"><h3>Digital & Content</h3><ul><li>Canva & Bulk Create</li><li>Adobe Photoshop</li><li>CapCut Pro</li><li>DaVinci Resolve</li><li>Graphic & social content design</li><li>UGC / short-form content</li><li>Basic content scheduling</li></ul></article>
-      <article class="skill-panel reveal delay-2"><h3>Web & E-commerce</h3><ul><li>WordPress + Elementor</li><li>Basic HTML / CSS</li><li>VS Code & GitHub basics</li><li>E-commerce fulfillment</li><li>Inventory monitoring</li><li>Product packaging & labeling</li></ul></article>
-      <article class="skill-panel reveal delay-3"><h3>AI & Technical</h3><ul><li>ChatGPT & Gemini</li><li>NotebookLM</li><li>Google AI Studio</li><li>Prompting & AI workflows</li><li>Computer hardware servicing</li><li>PC diagnostics & repair</li><li>Network troubleshooting</li><li>Windows / software setup</li></ul></article>
-    </div><div class="achievement-strip reveal"><div><span class="achievement-kicker">Recognition</span><strong>Outstanding Intern Award</strong></div><div><span class="achievement-kicker">Recognition</span><strong>Outstanding Output Achievement Award</strong></div><div><span class="achievement-kicker">Strengths</span><strong>Adaptability • Initiative • Detail • Teamwork</strong></div></div></div></section>
+          <article class="case-card reveal" data-case="ojt">
+            <div class="case-media ojt-mockup">
+              <div class="ojt-dashboard">
+                <div class="ojt-top"><span>GC & CO. / OJT</span><strong>WORKFLOW BOARD</strong></div>
+                <div class="ojt-grid">
+                  <div class="ojt-tile"><small>CONTENT</small><b>UGC + Reels</b><span>Canva · AI · Video</span></div>
+                  <div class="ojt-tile"><small>OPERATIONS</small><b>Fulfillment</b><span>Pack · Label · Seal</span></div>
+                  <div class="ojt-tile"><small>INVENTORY</small><b>Stock Support</b><span>Count · Organize</span></div>
+                  <div class="ojt-tile accent"><small>RECOGNITION</small><b>Outstanding Intern</b><span>+ Outstanding Output</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="case-content">
+              <div class="case-index">02</div>
+              <p class="case-kicker">E-commerce · Content · Operations</p>
+              <h3>GC & Co. — Digital & E-commerce Internship</h3>
+              <p>Supported product fulfillment, packaging, inventory, AI-assisted content, UGC, Canva bulk workflows, marketing materials, and workplace presentations.</p>
+              <div class="case-tags"><span>UGC</span><span>AI content</span><span>Inventory</span><span>Canva</span></div>
+              <button class="text-link case-open" type="button">View case study <span>↗</span></button>
+            </div>
+          </article>
 
-    <section class="section-shell section education-section"><div class="education-card reveal"><p class="eyebrow">Education</p><h2>Bachelor of Technical-Vocational Teacher Education</h2><p class="education-major">Major in Computer Hardware Servicing (COMHS)</p><div class="education-footer"><span>Mariano Marcos State University</span><span>2022–Present</span></div></div></section>
+          <article class="case-card reveal delay-1" data-case="teaching">
+            <div class="case-media teaching-mockup">
+              <div class="lesson-paper"><div class="lesson-head"><span>ICT / CSS</span><strong>LESSON PLAN</strong></div><h4>Installing Application Software</h4><div class="lesson-row"><b>Grade</b><span>10</span></div><div class="lesson-row"><b>Approach</b><span>Demo · Stations · Performance Task</span></div><div class="lesson-checks"><span>✓ OHS & Safety</span><span>✓ Offline installers</span><span>✓ Troubleshooting</span><span>✓ Assessment</span></div></div>
+            </div>
+            <div class="case-content">
+              <div class="case-index">03</div>
+              <p class="case-kicker">Education · ICT / CSS · 2026</p>
+              <h3>Teaching & Instructional Design</h3>
+              <p>Developed lesson plans, quizzes, rubrics, performance tasks, instructional materials, and learner-centered activities for Grade 9 and Grade 10 ICT/CSS classes.</p>
+              <div class="case-tags"><span>Lesson planning</span><span>Assessment</span><span>CSS</span></div>
+              <button class="text-link case-open" type="button">View case study <span>↗</span></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <section class="section section-contact" id="contact"><div class="section-shell contact-grid"><div class="contact-copy reveal"><p class="eyebrow">Let's work together</p><h2>Need someone adaptable who can handle both technical and digital work?</h2><p>I’m open to opportunities in virtual assistance, e-commerce, content support, ICT/technical support, and education-related work.</p></div><div class="contact-actions reveal delay-1"><a href="mailto:joshuapancho69@gmail.com" class="contact-link"><span>Email</span><strong>joshuapancho69@gmail.com</strong></a><a href="https://github.com/Kittieee0929" target="_blank" rel="noopener" class="contact-link"><span>GitHub</span><strong>@Kittieee0929</strong></a><div class="contact-link static-link"><span>Location</span><strong>Laoag City, Ilocos Norte, Philippines</strong></div></div></div></section>
+    <section class="section section-services" id="about">
+      <div class="section-shell">
+        <div class="section-intro reveal">
+          <div><p class="eyebrow">What I can help with</p><h2>One person. <em>Several useful lanes.</em></h2></div>
+          <p>I’m strongest in roles where organization, technology, communication, and creative problem-solving overlap.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card reveal"><div class="service-icon">01</div><h3>Virtual Assistance & Admin</h3><p>Data entry, file organization, SOPs, spreadsheets, research, Google Workspace, Microsoft Office, and day-to-day administrative support.</p><ul><li>40+ WPM data entry</li><li>Document & folder systems</li><li>Research and task support</li></ul></article>
+          <article class="service-card reveal delay-1"><div class="service-icon">02</div><h3>Content & E-commerce</h3><p>Canva design, short-form content, UGC concepts, basic video editing, product workflows, inventory support, and fulfillment coordination.</p><ul><li>Canva & Bulk Create</li><li>CapCut / DaVinci Resolve</li><li>Product & inventory workflows</li></ul></article>
+          <article class="service-card reveal delay-2"><div class="service-icon">03</div><h3>Technical & Web Support</h3><p>Computer servicing, Windows setup, troubleshooting, WordPress/Elementor, basic HTML/CSS, GitHub, and practical technical support.</p><ul><li>PC diagnostics & repair</li><li>WordPress + Elementor</li><li>Basic web / GitHub workflow</li></ul></article>
+          <article class="service-card reveal delay-3"><div class="service-icon">04</div><h3>AI-Assisted Workflows</h3><p>Prompting, research synthesis, content ideation, documentation, productivity workflows, and responsible use of modern AI tools.</p><ul><li>ChatGPT & Gemini</li><li>NotebookLM & AI Studio</li><li>Human-reviewed outputs</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-about">
+      <div class="section-shell about-layout">
+        <div class="about-sticky reveal"><p class="eyebrow">About me</p><h2>Technical foundation.<br><em>Generalist mindset.</em></h2><p>I like being the person who can understand the task, figure out the tool, and get the work across the finish line.</p></div>
+        <div class="about-story">
+          <article class="story-block reveal"><span>01</span><h3>I learn by doing.</h3><p>My experience spans food service, government support work, e-commerce operations, classroom teaching, research, multimedia content, and computer servicing. That range taught me how to adapt quickly without losing attention to detail.</p></article>
+          <article class="story-block reveal"><span>02</span><h3>I use AI as a tool, not an autopilot.</h3><p>I use ChatGPT, Gemini, NotebookLM, Google AI Studio and other AI tools for research, planning, ideation, and production — then review, contextualize, verify, and refine the result before it becomes finished work.</p></article>
+          <article class="story-block reveal"><span>03</span><h3>I care about usable outputs.</h3><p>A clean folder structure, a working website, a lesson students can actually follow, a spreadsheet that makes sense, or content that fits the brand — the end result matters more than looking busy.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-experience" id="experience">
+      <div class="section-shell">
+        <div class="section-intro reveal"><div><p class="eyebrow">Experience</p><h2>Different environments.<br><em>Transferable skills.</em></h2></div><p>Service taught me speed and people skills. Technical work taught me troubleshooting. Teaching and research taught me structure. E-commerce taught me execution.</p></div>
+
+        <div class="experience-list">
+          <article class="experience-row reveal"><div class="experience-date">2026</div><div class="experience-main"><h3>GC & Co. Online Shop</h3><p>OJT / E-commerce & Digital Content Intern</p></div><div class="experience-summary">Packaging, fulfillment, inventory, content creation, AI workflows, marketing materials, UGC, presentations.</div><div class="experience-dot"></div></article>
+          <article class="experience-row reveal"><div class="experience-date">2026</div><div class="experience-main"><h3>MMSU Laboratory Schools</h3><p>Field Study / Student Teacher — ICT & CSS</p></div><div class="experience-summary">Classroom support, lesson planning, assessments, instructional materials, Grade 9–10 CSS laboratory activities.</div><div class="experience-dot"></div></article>
+          <article class="experience-row reveal"><div class="experience-date">2024–2025</div><div class="experience-main"><h3>Trattoria Altrove Cuisine Inc.</h3><p>Customer Service & Operations</p></div><div class="experience-summary">Guest service, sales, beverage preparation, inventory, kitchen support, operational records.</div><div class="experience-dot"></div></article>
+          <article class="experience-row reveal"><div class="experience-date">2023–2024</div><div class="experience-main"><h3>City Agriculture Office — Laoag City</h3><p>Administrative & Outreach Support</p></div><div class="experience-summary">Farmer education support, program communication, workshop logistics, documentation, outreach.</div><div class="experience-dot"></div></article>
+          <article class="experience-row reveal"><div class="experience-date">2019–2022</div><div class="experience-main"><h3>Jollibee</h3><p>Customer Service & Operations</p></div><div class="experience-summary">Cashiering, drive-thru, food preparation, training support, high-volume customer service and sanitation standards.</div><div class="experience-dot"></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-skills" id="skills">
+      <div class="section-shell">
+        <div class="section-intro reveal"><div><p class="eyebrow">Skills & tools</p><h2>A practical stack for <em>getting things done.</em></h2></div><p>Click a category to see the tools and capabilities I use most.</p></div>
+
+        <div class="skill-tabs reveal" role="tablist" aria-label="Skill categories">
+          <button class="skill-tab active" data-skill="admin" type="button" role="tab" aria-selected="true">Admin / VA</button>
+          <button class="skill-tab" data-skill="creative" type="button" role="tab" aria-selected="false">Creative</button>
+          <button class="skill-tab" data-skill="web" type="button" role="tab" aria-selected="false">Web / E-commerce</button>
+          <button class="skill-tab" data-skill="ai" type="button" role="tab" aria-selected="false">AI / Productivity</button>
+          <button class="skill-tab" data-skill="technical" type="button" role="tab" aria-selected="false">Technical</button>
+        </div>
+
+        <div class="skill-display reveal">
+          <div class="skill-copy"><p class="skill-overline">Selected category</p><h3 id="skill-title">Admin & Virtual Assistance</h3><p id="skill-description">Reliable support for repetitive, organized, detail-heavy work — from documents and spreadsheets to research and task coordination.</p></div>
+          <div class="skill-cloud" id="skill-cloud" aria-live="polite"></div>
+        </div>
+
+        <div class="recognition-grid">
+          <article class="recognition-card reveal"><span>Recognition</span><strong>Outstanding Intern Award</strong><p>GC & Co. Online Shop OJT</p></article>
+          <article class="recognition-card reveal delay-1"><span>Recognition</span><strong>Outstanding Output Achievement Award</strong><p>GC & Co. Online Shop OJT</p></article>
+          <article class="recognition-card reveal delay-2"><span>Education</span><strong>BTVTE — Computer Hardware Servicing</strong><p>Mariano Marcos State University · 2022–Present</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cta" id="contact">
+      <div class="section-shell cta-card reveal">
+        <div class="cta-top"><p class="eyebrow">Let’s work together</p><span class="cta-status"><i></i> Open to opportunities</span></div>
+        <h2>Need someone who can handle both <em>technical</em> and <em>digital</em> work?</h2>
+        <p>I’m open to remote roles and project work in virtual assistance, e-commerce support, content, technical support, and education-related work.</p>
+        <div class="cta-actions"><a class="button button-light" href="mailto:joshuapancho69@gmail.com">Email me <span>↗</span></a><a class="button button-outline-light" href="https://github.com/Kittieee0929" target="_blank" rel="noopener">GitHub <span>↗</span></a><a class="button button-outline-light" href="resume.html" target="_blank" rel="noopener">Résumé <span>↗</span></a></div>
+        <div class="cta-footer"><span>Laoag City, Ilocos Norte, Philippines</span><span>joshuapancho69@gmail.com</span></div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer"><p>© <span id="year"></span> Aerojohn Joshua G. Pancho</p><a href="#top">Back to top ↑</a></footer>
+  <footer class="site-footer section-shell"><div><strong>AJ.</strong><span>Built with care, curiosity, and a little caffeine.</span></div><div><span>© <span id="year"></span> Aerojohn Joshua G. Pancho</span><a href="#top">Back to top ↑</a></div></footer>
+
+  <div class="case-modal" id="case-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" type="button" aria-label="Close case study" data-close-modal>×</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
