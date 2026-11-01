@@ -209,6 +209,22 @@
 @media(max-width:760px){.skills-hero{grid-template-columns:1fr;gap:10px}.skills-aside{padding:21px}.skills-hero h2{font-size:clamp(36px,7vw,52px)}.remote-skills{padding-block:85px}.skills-bottom{align-items:start;flex-direction:column}}
 @media(max-width:520px){.skill-groups{grid-template-columns:1fr}.skill-group{padding:23px 20px}.skills-bottom{padding:21px}.brief-alternates{grid-template-columns:1fr 1fr}.brief-alternates button:last-child{grid-column:1/-1}}
 @media(max-width:350px){.brief-alternates{grid-template-columns:1fr}.brief-alternates button:last-child{grid-column:auto}}
+
+/* V9 – direct contact experience */
+.brief-live-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#35ad78;vertical-align:middle;margin-right:5px;box-shadow:0 0 0 3px #35ad7824}
+.brief-preamble{font-size:13px;line-height:1.72;color:#567068;margin:0 0 17px}
+.brief-form label .required-mark{color:#ad5946;font-weight:800}
+.brief-form input:required:invalid:not(:placeholder-shown),.brief-form textarea:required:invalid:not(:placeholder-shown){border-color:#bc9a78}
+.brief-honey{position:absolute;left:-99999px;top:auto;width:1px;height:1px;overflow:hidden}
+.brief-submit:disabled{opacity:.72;cursor:wait;pointer-events:none}
+.brief-submit.is-sending #briefSendIcon{animation:briefSpin .85s linear infinite}
+@keyframes briefSpin{to{transform:rotate(360deg)}}
+.brief-feedback[data-state="success"]{background:#edf8ef;color:#166343!important;border-left-color:#299468}
+.brief-feedback[data-state="error"]{background:#fff1ee;color:#9a3d34!important;border-left-color:#d26652}
+.brief-direct-backup{margin-top:15px;padding:15px 0 3px;font-size:12px;color:#607d70;display:flex;justify-content:space-between;align-items:center;gap:9px;flex-wrap:wrap}
+.brief-direct-backup a{font-weight:800;color:#176653;text-decoration:underline;text-underline-offset:3px}
+.brief-direct-backup a:hover{color:#0a3e33}
+@media(max-width:480px){.brief-head{font-size:9px;letter-spacing:.07em}.brief-preamble{font-size:12px}}
 </style>
 
 <meta property="og:type" content="website">
@@ -402,19 +418,38 @@
 
 <section class="section inquiry" id="inquiry" aria-labelledby="inquiry-title">
  <div class="container inquiry-layout">
-   <div class="inquiry-info"><div class="eyebrow sea">QUICK PROJECT BRIEF</div><h2 id="inquiry-title">Have a task?<br><em>Let's make a plan.</em></h2><p>Share a few details and open a ready-to-review message in Gmail or Outlook. No account with this portfolio is required.</p><div class="inquiry-help"><b>Common starting points</b><p>Website improvements · Canva content · Presentation slides · Document formatting · Virtual admin tasks · Learning resources</p></div><p class="inquiry-fine">Academic support means formatting, editing, tutoring or technical guidance—not submitting someone else's work as your own.</p></div>
-   <form id="briefForm" class="brief-form" aria-label="Compose a project inquiry">
-     <div class="brief-head"><span>YOUR PROJECT IN THREE STEPS</span><span>01 / 03</span></div>
-     <label for="briefType">What do you need help with?</label>
-     <select id="briefType" name="service" required><option value="">Select a service</option><option value="Website design or improvements">Website design or improvements</option><option value="Graphics or digital media">Graphics or digital media</option><option value="Document editing or presentation">Document editing or presentation</option><option value="Virtual or administrative support">Virtual or administrative support</option><option value="Customer service or order support">Customer service or order support</option><option value="Entry-level IT or technical assistance">Entry-level IT or technical assistance</option><option value="Part-time remote job opportunity">Part-time remote job opportunity</option><option value="Educational or technical project">Educational or technical project</option><option value="Other inquiry">Something else</option></select>
-     <label for="briefName">What should I call you? <span>(optional)</span></label>
-     <input id="briefName" name="name" maxlength="80" autocomplete="name" placeholder="Your name or team"><label for="briefReply">Your email address <span>(optional, so I can reply)</span></label><input id="briefReply" name="reply" type="email" maxlength="160" autocomplete="email" placeholder="you@example.com"/>
-     <label for="briefMessage">A few details about the task</label>
-     <textarea id="briefMessage" name="message" rows="4" maxlength="1200" placeholder="What are you trying to create, improve, or organize?" required></textarea>
-     <button class="brief-submit" type="submit" id="briefGmail">Continue in Gmail <span aria-hidden="true">↗</span></button>
-<div class="brief-alternates" aria-label="Other ways to prepare email"><button type="button" id="briefOutlook">Outlook Web ↗</button><button type="button" id="briefMail">Email app ↗</button><button type="button" id="briefCopy">Copy message ⧉</button></div>
-<p id="briefFeedback" class="brief-feedback" role="status" aria-live="polite">Choose an option above to prepare a draft. You review and press Send in your email service.</p>
-<p class="brief-disclaimer">This static website does not automatically send or store messages. Gmail and Outlook open in your browser; the email-app option requires a configured mail handler.</p>
+   <div class="inquiry-info"><div class="eyebrow sea">QUICK PROJECT BRIEF</div><h2 id="inquiry-title">Have a task?<br><em>Let's make a plan.</em></h2><p>Send your inquiry directly through this page. Tell me what you need, add an email where I can reply, and I’ll receive your message after the contact form is activated.</p><div class="inquiry-help"><b>Common starting points</b><p>Website improvements · Canva content · Presentation slides · Document formatting · Virtual admin tasks · Learning resources</p></div><p class="inquiry-fine">Academic support means formatting, editing, tutoring or technical guidance—not submitting someone else's work as your own.</p></div>
+   <form id="briefForm" class="brief-form" action="https://formsubmit.co/joshuapancho0929@gmail.com" method="POST" aria-label="Send a message to Aerojohn">
+     <div class="brief-head"><span>CONTACT ME DIRECTLY</span><span><span class="brief-live-dot" aria-hidden="true"></span> EMAIL INQUIRY</span></div>
+     <p class="brief-preamble">Have a project, a question, or a job opportunity? Fill this out and send it right here. No email app or sign-in needed.</p>
+     <label for="briefType">How can I help? <span class="required-mark">*</span></label>
+     <select id="briefType" name="service" required>
+      <option value="">Choose a service</option>
+      <option value="Website design or improvements">Website design or improvements</option>
+      <option value="Graphics or digital media">Graphics or digital media</option>
+      <option value="Document editing or presentation">Document editing or presentation</option>
+      <option value="Virtual or administrative support">Virtual or administrative support</option>
+      <option value="Customer service or order support">Customer service or order support</option>
+      <option value="Entry-level IT or technical assistance">Entry-level IT or technical assistance</option>
+      <option value="Part-time remote job opportunity">Part-time remote job opportunity</option>
+      <option value="Educational or technical project">Educational or technical project</option>
+      <option value="Other inquiry">Something else</option>
+     </select>
+     <label for="briefName">Your name <span class="required-mark">*</span></label>
+     <input id="briefName" name="name" type="text" maxlength="80" autocomplete="name" placeholder="What should I call you?" required/>
+     <label for="briefReply">Your email <span class="required-mark">*</span></label>
+     <input id="briefReply" name="email" type="email" maxlength="160" autocomplete="email" placeholder="you@example.com" required/>
+     <label for="briefMessage">Tell me about your project or inquiry <span class="required-mark">*</span></label>
+     <textarea id="briefMessage" name="message" rows="5" minlength="10" maxlength="2000" placeholder="What do you need, when do you need it, and how can I help?" required></textarea>
+     <input type="hidden" name="_subject" id="briefSubject" value="New portfolio inquiry"/>
+     <input type="hidden" name="_template" value="table"/>
+     <input type="hidden" name="_captcha" value="false"/>
+     <input type="hidden" name="_url" value="https://kittieee0929.github.io/Aerojohn-Joshua-Pancho-Portfolio/"/>
+     <div class="brief-honey" aria-hidden="true"><label for="briefWebsite">Leave this empty</label><input id="briefWebsite" type="text" name="_honey" tabindex="-1" autocomplete="off"/></div>
+     <button class="brief-submit" type="submit" id="briefSend"><span id="briefSendText">Send message directly</span><span aria-hidden="true" id="briefSendIcon">↗</span></button>
+     <p id="briefFeedback" class="brief-feedback" data-state="info" role="status" aria-live="polite">Your inquiry is submitted from this page and forwarded to my email. No need to open Gmail.</p>
+     <div class="brief-direct-backup">Prefer using your own email? <a href="mailto:joshuapancho0929@gmail.com?subject=Portfolio%20inquiry">Email me directly ↗</a></div>
+     <p class="brief-disclaimer">Messages are processed by FormSubmit and forwarded to my inbox. Please do not include passwords, sensitive information, or confidential files. First-time setup requires email verification by the site owner.</p>
    </form>
  </div>
 </section>
@@ -440,30 +475,14 @@ if('IntersectionObserver'in window){const links=[...nav.querySelectorAll('a')];c
  const projectBrief=document.querySelector('#briefForm');
  const destination='joshuapancho0929@gmail.com';
  const briefFeedback=document.querySelector('#briefFeedback');
- function prepareDraft(){
-  if(!projectBrief.reportValidity())return null;
-  const type=document.querySelector('#briefType').value.trim();
-  const name=document.querySelector('#briefName').value.trim();
-  const reply=document.querySelector('#briefReply').value.trim();
-  const desc=document.querySelector('#briefMessage').value.trim();
-  if(!type||!desc)return null;
-  const subject='Portfolio inquiry — '+type;
-  const body=['Hello, I found your portfolio and would like to get in touch.','','Topic: '+type,'Name / organization: '+(name||'Not specified'),'My email: '+(reply||'Not specified'),'','Message:',desc,'','Thank you!'].join('\n');
-  return {subject,body};
- }
- function webmailUrl(service,draft){
-  const e=encodeURIComponent;
-  return service==='outlook' ?
-    'https://outlook.live.com/mail/0/deeplink/compose?to='+e(destination)+'&subject='+e(draft.subject)+'&body='+e(draft.body) :
-    'https://mail.google.com/mail/?view=cm&fs=1&to='+e(destination)+'&su='+e(draft.subject)+'&body='+e(draft.body);
- }
- function feedback(message){if(briefFeedback)briefFeedback.textContent=message;notify(message)}
- function openCompose(service){
-  const draft=prepareDraft();if(!draft){feedback('Please choose a service and describe your request.');return}
-  const url=webmailUrl(service,draft);
-  // Navigate directly from the user's click: no fragile local mailto handler or popup blocker.
-  feedback('Opening '+(service==='outlook'?'Outlook':'Gmail')+' with your draft. Please review and press Send.');
-  window.location.assign(url);
+ const briefSend=document.querySelector('#briefSend');
+ const briefSendText=document.querySelector('#briefSendText');
+ const briefSendIcon=document.querySelector('#briefSendIcon');
+ let sending=false;
+ function setFeedback(message,state='info'){
+   if(!briefFeedback)return;
+   briefFeedback.textContent=message;
+   briefFeedback.dataset.state=state;
  }
  async function copyText(text){
   try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);return true}}catch(e){}
@@ -471,20 +490,49 @@ if('IntersectionObserver'in window){const links=[...nav.querySelectorAll('a')];c
   let ok=false;try{ok=document.execCommand('copy')}catch(e){}temp.remove();return ok;
  }
  if(projectBrief){
-  projectBrief.addEventListener('submit',e=>{e.preventDefault();openCompose('gmail')});
-  document.querySelector('#briefOutlook').addEventListener('click',()=>openCompose('outlook'));
-  document.querySelector('#briefMail').addEventListener('click',()=>{
-    const d=prepareDraft();if(!d){feedback('Please complete the service and message fields first.');return}
-    const mailto='mailto:'+destination+'?subject='+encodeURIComponent(d.subject)+'&body='+encodeURIComponent(d.body);
-    feedback('Opening the email app. If nothing happens, choose Gmail or Outlook instead.');
-    window.location.href=mailto;
-  });
-  document.querySelector('#briefCopy').addEventListener('click',async()=>{
-    const d=prepareDraft();if(!d){feedback('Please complete the service and message fields first.');return}
-    const body='To: '+destination+'\nSubject: '+d.subject+'\n\n'+d.body;
-    const ok=await copyText(body);
-    feedback(ok?'Email details copied. Paste them into any email service.':'Unable to copy automatically. Use Gmail or Outlook instead.');
-  });
+   projectBrief.addEventListener('submit',async e=>{
+     e.preventDefault();
+     if(sending||!projectBrief.reportValidity())return;
+     const type=document.querySelector('#briefType').value.trim();
+     const fullName=document.querySelector('#briefName').value.trim();
+     const email=document.querySelector('#briefReply').value.trim();
+     const message=document.querySelector('#briefMessage').value.trim();
+     const honeypot=document.querySelector('#briefWebsite').value;
+     if(!type||!fullName||!email||message.length<10){setFeedback('Please complete all fields and write a message of at least 10 characters.','error');return;}
+     if(honeypot){setFeedback('Your message could not be submitted. Please contact me by email.','error');return;}
+     document.querySelector('#briefSubject').value='New portfolio inquiry — '+type;
+     const formData=new FormData(projectBrief);
+     sending=true;
+     briefSend.disabled=true;
+     briefSend.classList.add('is-sending');
+     briefSendText.textContent='Sending your message…';
+     briefSendIcon.textContent='◌';
+     setFeedback('Submitting securely through the contact service…','info');
+     const controller=new AbortController();
+     const timeout=setTimeout(()=>controller.abort(),16000);
+     try{
+       const payload=Object.fromEntries(formData.entries());
+       const response=await fetch('https://formsubmit.co/ajax/'+encodeURIComponent(destination),{
+          method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+          body:JSON.stringify(payload),signal:controller.signal
+       });
+       let data={};try{data=await response.json()}catch(err){throw new Error('The contact service did not return a valid response.');}
+       if(!response.ok||data.success===false||data.success==='false'||data.error)throw new Error('The contact service could not accept your message.');
+       setFeedback('✓ Message submitted! Thank you for reaching out. Delivery may require one-time mailbox activation by the site owner.','success');
+       projectBrief.reset();
+       notify('Message submitted');
+     }catch(err){
+       const timedOut=err?.name==='AbortError';
+       setFeedback(timedOut?'The request timed out, so delivery is unconfirmed. Please use the email link below.':'Message could not be confirmed. Please retry or use the email link below.','error');
+     }finally{
+       clearTimeout(timeout);
+       sending=false;
+       briefSend.disabled=false;
+       briefSend.classList.remove('is-sending');
+       briefSendText.textContent='Send message directly';
+       briefSendIcon.textContent='↗';
+     }
+   });
  }
 window.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
 })();
